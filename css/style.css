@@ -1,0 +1,148 @@
+:root {
+    --main-color: #9AC8CD;
+    --second-color: #FF9A00;
+    --text-color: #EEEEEE;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    /* background-color: var(--main-color); */
+    background-image: linear-gradient(rgba(0, 0, 0, .5)50%, rgba(0, 0, 0, .5)100%), url(../images/wallpaper2you_542340.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    nav {
+        background: transparent;
+
+        .navbar-brand {
+            color: var(--main-color)!important;
+
+            .logo-type {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 5px;
+                color: var(--text-color) !important;
+            }
+        }
+
+        .navbar-nav li {
+            margin-inline: 20px;
+            color: var(--text-color);
+
+            a {
+                color: var(--text-color) !important;
+                font-weight: bold;
+                border: 2px solid transparent;
+                border-radius: 30px;
+                padding: 10px 30px;
+
+            }
+
+            a:hover {
+                color: var(--main-color) !important;
+                border: 2px solid var(--main-color);
+                border-radius: 30px;
+                padding: 10px 30px;
+
+            }
+
+        }
+
+        .navbar-nav .nav-link.active {
+            color: var(--main-color) !important;
+            border: 2px solid var(--main-color);
+            border-radius: 30px;
+            padding: 10px 30px;
+        }
+    }
+
+    .card {
+        height: 350px;
+        color: var(--text-color) !important;
+
+        .card-header {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            p {
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            h5 {
+                font-size: 22px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    #card1 {
+        background-image: linear-gradient(rgba(0, 0, 0, .4)50%, rgba(0, 0, 0, .4)100%), url(../images/sunny1.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #card2 {
+        background-image: linear-gradient(rgba(0, 0, 0, .4)50%, rgba(0, 0, 0, .4)100%), url(../images/heavy-rain.jpeg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #card3 {
+        background-image: linear-gradient(rgba(0, 0, 0, .4)50%, rgba(0, 0, 0, .4)100%), url(../images/cloudy.jpeg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .footer {
+        background: transparent;
+
+        .icons {
+            a {
+                border: 2px solid var(--main-color);
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                color: var(--main-color);
+                font-weight: bold;
+                transition: all .3s;
+
+                i {
+                    font-size: 20px;
+                }
+            }
+
+            a:hover {
+                background-color: var(--main-color);
+                color: var(--text-color);
+            }
+        }
+
+        p {
+            color: var(--text-color);
+        }
+    }
+
+}
+
+@media (max-width:575px) {
+    .footer .subscribe {
+        flex-direction: column;
+    }
+
+}

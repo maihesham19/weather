@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>WEATHER</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg py-4 shadow-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa fa-cloud-sun fs-2"></i>
+        <div class="logo-type">
+          <h1 class="site-title fs-5">Weather</h1>
+          <h6 class="site-description fs-6">tagline goes here</h6>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="search my-5 d-flex gap-2">
+      <input type="text" class="form-control shadow-none" id="city">
+      <button class="btn btn-secondary">search</button>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row my-3" id="rowData">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row my-3" id="rowDataTomorrow">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row my-3" id="rowDataAfterTomorrow">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer py-5 mt-5 shadow-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-center align-items-center gap-3 subscribe">
+            <input type="text" class="form-control shadow-none">
+            <button class="btn btn-secondary">subscribe</button>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="icons d-flex justify-content-center align-items-center gap-3 mt-5">
+            <div class="d-flex gap-3">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="d-flex gap-3">
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-4 mb-0 text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
